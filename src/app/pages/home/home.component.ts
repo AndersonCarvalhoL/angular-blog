@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 import { MenuTitleComponent } from "../../components/menu-title/menu-title.component";
@@ -13,6 +13,11 @@ import { MenuBarComponent } from "../../components/menu-bar/menu-bar.component";
     styleUrl: './home.component.css',
     imports: [MenuTitleComponent, BigCardComponent, SmallCardComponent, MenuBarComponent]
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
+  constructor(){}
+
+  ngOnInit(): void {
+
+  }
 }
